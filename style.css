@@ -1,0 +1,235 @@
+
+body{
+    width: 1440px;
+    justify-content: center;
+    align-items: center; 
+    margin: 100px auto;
+}
+
+
+@media (max-width:1440px){
+    body{
+        max-width: 1150px;
+        margin: 100px 0px !important;
+    }
+    .product-info, .products {
+        justify-content: center;
+    }
+    .buttons{
+        display:flex;
+        flex-direction:column;
+    }
+}
+@media (max-width:1330px){
+    .info{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    .product{
+        display: flex;
+    }
+    .guarantee{
+        max-width: 250px;
+        max-height: 250px;
+    }
+}
+@media (max-width:1025px){
+    .info{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+    .product{
+        display: flex;
+    }
+    .guarantee{
+        min-width: 250px;
+        min-height: 250px;
+    }
+}
+@media (max-width:769px){
+    .product-info{
+        max-height: 535px;
+    }
+    .main-product{
+        max-width: 525px;
+    }
+    .pic-main-product {
+        max-width: 400px;
+        max-height: 250px;
+    }
+    .left-side-prod{
+        margin: 0;
+    }
+    .product{
+        display: flex;
+    }
+}
+@media (max-width:425px){
+    .guarantees{
+        justify-content: center;
+    }
+    .guarantee{
+        min-width: 200px;
+        min-height: 200px;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+}
+.info, .guarantees{
+    display: flex;
+}
+.products{
+    display: flex;
+    flex-wrap:wrap;
+}
+.product{
+    display: block;
+}
+.product-info{
+    width: 537px;
+    margin: 0 10px;
+}
+.prod{
+    max-width: 100%;
+}
+.main-product{
+    width: 539px;
+    height: 539px;
+    border: 2px solid #E3E2E2;
+    box-sizing: border-box;
+}
+.left-side-prod{
+    width: 203px;
+    height: 166px;
+    border: 2px solid #E3E2E2;
+    margin: 0 10px 15px 0;
+}
+.pic-main-product{
+    width: 536px;
+    height: 302px;
+    padding-top: 25%;
+}
+
+.wrap{
+    font-family: 'Oswald', sans-serif;
+    font-size: 4.8vh;
+    margin: 0;
+}
+.strike{
+    color: black !important;
+    text-decoration-color:red!important;
+    padding-right:5px ;
+}
+.product-small{
+    width: 54px;
+    height: 44px;
+    padding: 20px 10px 20px 0;
+}
+.prod-img{
+    width: 100%;
+    height: 100%;
+    background-size:cover;
+    border: 2px solid #EAE9E9;
+    box-sizing: border-box;
+    padding-right: 8px;
+}
+.prod-img:hover ~ .prod-text-hidden{
+    visibility:visible;
+}
+.prod-text-hidden{
+    font-family: 'Oswald';
+    font-weight: 200;
+    font-size: 1.055vh;
+    visibility: hidden;
+}
+.one{
+    background-image: url('./img/s1.png');
+}
+.two{
+    background-image: url('./img/s2.png');
+}
+.three{
+    background-image: url('./img/s3.png');
+}
+.polycarbonat-info{
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content:space-between;
+    padding-top: 20px;
+}
+.poly-name, .poly-price{
+    font-family: Oswald;
+    font-size: 24px;
+    margin: 0;
+}
+.red{
+    color: red;
+}
+/*--------------guarantees--------------*/
+.guarantee{
+    width: 147px;
+    height: 149px;
+    background: #33F0A9;
+    margin: 10px;
+    padding: 10px;
+}
+.name-garantee{
+    font-family: Oswald;
+    font-size: 1.9vh;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.garantee-txt{
+    font-family: Helvetica;
+    font-size: 1.68vh;
+    line-height: 140%;
+    text-align: center;
+    padding: 0 8px;
+}
+/*-----------------BUTTONS----------------*/
+.buttons{
+    /* display: block; */
+    margin: 0 0 0 20px;
+}
+.add, .build{
+    height: 74px;
+    width: 530px;
+    border: none;
+}
+.add-to-card, .build-your-prescr{
+    font-family: Oswald;
+    font-size: 1.68vh;
+    text-transform: uppercase;
+}
+.add{
+    background: #33F0A9;
+    margin-bottom: 18px;
+    box-shadow: 10px 10px 0 black;
+}
+.add:hover{
+    color: #33F0A9;
+    background:black;
+    box-shadow: 10px 10px 0 #33F0A9;
+    transition: 0.5s;
+}
+.build{
+    background: #000000;
+    box-shadow: 10px 10px 0 #33F0A9;
+    color: #33F0A9;
+}
+.build:hover{
+    background: #33F0A9;
+    box-shadow: 10px 10px 0 black;
+    color: black;
+    transition: 0.5s;
+}
